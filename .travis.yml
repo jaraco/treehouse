@@ -17,7 +17,7 @@ jobs:
     env:
     - TWINE_USERNAME=jaraco
     # TWINE_PASSWORD
-    - secure: ...
+    - secure: za9yrUgnV57T37v/eyHWnmly8k6HR4+2agMhK5BE0P3xmmIfKuhhAJLQKRUkdQcjB26YUDtdhzreEfrTPUl2c9CC8eS95/HmU/48r8sFRie8YKLchnzXo8xdmY4bsv+BjALRUaKomdeQEwOtqYm4G+pbzizMZax5vwI30+sW6wN0fQSf9DS83wcvQ6NDU2jv35sny50lwc9ujuq2DsP8I9fOhpzz4wNMaPuOYas/LkMEdGoYnEEOwPbUpf0akkYXUl7q8ou+dIgMn0D4tdgemiBzosBtHvAfYB10cauYybtuF6lAu60+Wftxmbd1kU+g2+eFZzfL5SpyQAQ3faONpvA8XHGZwZvF/au/P/r4LHuUgYWhbEKUXAKeMxtxkW610wVtJiZkv85guMZcn5M+C8UbH1wupmAmHk8QRBSRD/uSaEYnft+F8nANmBj2cuww0RwGZp7j/bn+oJPdnCLqNhKAYWz5dlpNHP2RNjGlAVcI1uiAjnHu+epjiKXu1dWxVepw3RIviunbw90YKJMhDmNvC78UXSJdttPD3f8kRUUK3O84SrKQgMOuqmlnrePH71LW1rA1gD/OCmCEQNYXciH1pL1u7MtuXBb3/34HR0dysMADlvkuuyuyKswkhukbNsjKXIHfh4GN3xbhe3VO4flxfSZNFajzL3bWVRzx+cw=
     - TOX_TESTENV_PASSENV="TWINE_USERNAME TWINE_PASSWORD"
     script: tox -e release
 
