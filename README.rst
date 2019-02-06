@@ -13,7 +13,7 @@
 ..    :target: https://treehouse.readthedocs.io/en/latest/?badge=latest
 
 
-Traverse Python object trees (dicts/lists) at C speed.
+Traverse Python object trees (dicts/lists) at C speed::
 
     >>> import treehouse
     >>> treehouse.map_values(int, {"a": "1", "b": {"c": "2"}})
