@@ -1,9 +1,12 @@
-cpdef map_values(transform, obj):
+cpdef map_values(transform, obj, suppressed=Exception):
     """
     invoke transform on obj and all values of obj, recursively
     """
 
-    obj = transform(obj)
+    try:
+        obj = transform(obj)
+    except suppressed:
+        pass
 
     return {
         k: map_values(transform, v)
