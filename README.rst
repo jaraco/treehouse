@@ -11,3 +11,15 @@
 
 .. .. image:: https://readthedocs.org/projects/treehouse/badge/?version=latest
 ..    :target: https://treehouse.readthedocs.io/en/latest/?badge=latest
+
+
+Traverse Python object trees (dicts/lists) at C speed.
+
+    >>> def maybe_int(ob):
+    ...     if not isinstance(ob, str) or not ob.isdigit():
+    ...         return ob
+    ...     return int(ob)
+
+    >>> import treehouse
+    >>> treehouse.map_values(maybe_int, {"a": "1", "b": {"c": "2"}})
+    {"a": 1, "b": {"c": 2}}
