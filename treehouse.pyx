@@ -5,16 +5,10 @@ cpdef map_values(transform, obj):
 
     obj = transform(obj)
 
-    if isinstance(obj, dict):
-        return {
-            k: map_values(transform, v)
-            for k, v in obj.iteritems()
-        }
-
-    if isinstance(obj, list):
-        return [
-            map_values(transform, v)
-            for v in obj
-        ]
-
-    return obj
+    return {
+        k: map_values(transform, v)
+        for k, v in obj.iteritems()
+    } if isinstance(obj, dict) else [
+        map_values(transform, v)
+        for v in obj
+    ] if isinstance(obj, list) else obj
