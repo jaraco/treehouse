@@ -7,5 +7,4 @@ if __name__ == "__main__":
         ext_modules=[
             setuptools.Extension('treehouse', ['treehouse.pyx']),
         ],
-        use_scm_version=True,
     )
