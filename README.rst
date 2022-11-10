@@ -1,10 +1,7 @@
 .. image:: https://img.shields.io/pypi/v/treehouse.svg
-   :target: `PyPI link`_
+   :target: https://pypi.org/project/treehouse
 
 .. image:: https://img.shields.io/pypi/pyversions/treehouse.svg
-   :target: `PyPI link`_
-
-.. _PyPI link: https://pypi.org/project/treehouse
 
 .. image:: https://github.com/jaraco/treehouse/workflows/tests/badge.svg
    :target: https://github.com/jaraco/treehouse/actions?query=workflow%3A%22tests%22
