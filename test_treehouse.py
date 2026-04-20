@@ -1,6 +1,6 @@
 import decimal
 
-import treehouse
+import treehouse  # type: ignore[import-not-found] # Needs a stub file
 
 
 def make_decimal(ob):
